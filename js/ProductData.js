@@ -34,3 +34,15 @@ module.exports = {
   }
 
 };
+
+/*
+In the interests of keeping us focused on Flux & React, we will be using a mock API and mock data for our product that we are going to display. That said, writing our product data and our API similarly to the way we would work with a real API adds the benefit that we could have an easier time plugging in a real API down the road if we had wanted to.
+*/
+
+/*
+As you can see above, we define a product that has options called variants. Our schema mirrors the type of data you might typically get back from a call to a restful API. We go ahead and load this data into localStorage, so that our mock API can grab that data and load it into our app.
+*/
+
+/*
+See CartAPI.js how our mock API grabs our data from localStorage and then uses Flux actions to send that data to our ProductStore:
+*/
